@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    
+    float pesoideal;
+    char sexo;
+    float altura = 0.0;
+        
+        printf("SABER SEU PESO IDEAL!\n");
+        printf("Digite a sua altura: ");
+        scanf("%f", &altura);
+        
+        getchar();
+        
+        printf("Digite seu sexo (M/F): ");
+        scanf("%c", &sexo);
+        
+        switch (sexo){
+            case 'M':
+            case 'm':
+            pesoideal = (72.7 * altura - 58);
+            printf("\nSeu peso ideal é igual a: %.2f kg", pesoideal);
+            break;
+            case 'F':
+            case 'f':
+            pesoideal = (62.1 * altura - 44.7);
+            printf("\nSeu peso ideal é igual a: %.2f kg", pesoideal);
+            break;
+            default:
+            printf("\nErro: Você digitou o sexo de forma errada");
+            break;
+        }
+        
+    return 0;
+}
