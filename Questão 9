@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    
+    int numero;
+    
+    printf("Digite um valor inteiro: ");
+    scanf("%d", &numero);
+    
+    printf("\nO número que você digitou foi: %d", numero);
+    printf("\nO seu antecessor é: %d", numero-1);
+    printf("\nO seu sucessor é: %d", numero+1);
+
+    return 0;
+}
