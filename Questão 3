@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    
+    float numero;
+    
+    printf("Digite um valor real de sua escolha: ");
+    scanf("%f", &numero);
+    
+    printf("\nCOM APENAS UMA CASA DECIMAL:");
+    printf("\nVocê digitou o número: %.1f", numero);
+
+    return 0;
+}
