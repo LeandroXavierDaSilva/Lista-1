@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    
+    char unidadedemedida;
+    float comprimento, largura, altura, volume;
+    
+    puts("MEDIR O VOLUME DA CAIXA RETANGULAR!");
+    printf("\nDigite o comprimento da caixa: ");
+    scanf("%f", &comprimento);
+    
+    printf("Digite a largura da caixa: ");
+    scanf("%f", &largura);
+    
+    printf("Digite a altura da caixa: ");
+    scanf("%f", &altura);
+    
+    getchar();
+    
+    printf("\nQual unidade de medida foi usada para medir a caixa? (M = Metros / C = Centímetros): ");
+    scanf("%c", &unidadedemedida);
+    
+    switch (unidadedemedida){
+        case 'm':
+        case 'M':
+        volume = comprimento * largura * altura;
+        printf("\nO volume da sua caixa é de %.2f m³", volume);
+        break;
+        case 'c':
+        case 'C':
+        volume = comprimento * largura * altura;
+        printf("\nO volume da sua caixa é de %.2f cm³", volume);
+        break;
+        default:
+        printf("\nERRO: Você Digitou a unidade de medida incorreta!");
+        break;
+    }
+    
+    return 0;
+}
