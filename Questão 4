@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    
+    int numero;
+    
+    printf("Digite um valor inteiro de sua escolha: ");
+    scanf("%d", &numero);
+    
+    printf("\nVALORES!:");
+    printf("\nVocê digitou o número: %d", numero);
+    printf("\nO triplo do número digitado é: %d", numero*3);
+    printf("\nO quadrado do número digitado é: %d", numero*numero);
+    printf("\nA metade do número digitado é: %.2f", (float)numero/2);
+    
+
+    return 0;
+}
