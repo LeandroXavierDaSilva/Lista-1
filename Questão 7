@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    
+    int horas, minutos, segundos, totalsegundos;
+    
+    printf("Digite as horas: ");
+    scanf("%d", &horas);
+    
+    printf("Digite os minutos: ");
+    scanf("%d", &minutos);
+    
+    printf("Digite os segundos: ");
+    scanf("%d", &segundos);
+    
+    printf("\nVocê digitou %d horas, %d minutos e %d segundos", horas, minutos, segundos);
+    
+    printf("\n\nEM SEGUNDOS:");
+    totalsegundos = (3600*horas) + (60*minutos) + (segundos);
+    printf("\nNo total já se passaram %d segundos.", totalsegundos);
+    
+    return 0;
+}
