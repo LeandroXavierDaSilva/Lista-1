@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    
+    float conta, ValorFinal, taxa = 10;
+    
+    printf("Digite quanto você gastou no restaurante: ");
+    scanf("%f", &conta);
+    
+    printf("Somente em consumo, você gastou: %.2f", conta);
+    
+    ValorFinal = conta + (conta * taxa/100);
+    
+    printf("\n\nVALOR REAL A SER PAGO COM A TAXA DE 10%%:");
+    printf("\nSomando com os 10%% do garçom, o valor total a ser pago é de: %.2f reais", ValorFinal);
+
+    return 0;
+}
