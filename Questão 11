@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    
+    float reais, dolar, conversao;
+    
+    puts("CONVERSÃO DE REAIS PARA DÓLARES!");
+    printf("\nQuantos reais você deseja converter para dólar?: ");
+    scanf("%f", &reais);
+    
+    printf("Qual a cotação do dólar atualmente?: ");
+    scanf("%f", &dolar);
+    
+    conversao = reais / dolar;
+    
+    printf("\n%.2f reais equivale a %.2f dólares", reais, conversao);
+
+    return 0;
+}
