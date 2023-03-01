@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    
+    int celsius, fahrenheit;
+    
+    puts("CONVERSÃO DE CELSIUS PARA FAHRENHEIT!");
+    printf("Digite a temperatura em graus Celsius: ");
+    scanf("%d", &celsius);
+    
+    fahrenheit = (9 * celsius + 160) / 5;
+    
+    printf("\n%dºC é exatamente %dº em Fahrenheit", celsius, fahrenheit);
+    
+    
+
+    return 0;
+}
