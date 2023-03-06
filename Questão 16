@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    
+    char nome[40];
+    int horasmes;
+    float horaaula, salariobruto, salarioliquido, descontoinss;
+    
+    printf("INSIRA ALGUNS DADOS PARA CALCULARMOS O SEU SALÁRIO LÍQUIDO!:");
+    
+    printf("\nDigite o seu nome, por favor: ");
+    scanf("%s", nome);
+    
+    printf("Qual é o valor da hora aula?: ");
+    scanf("%f", &horaaula);
+    
+    printf("Quantas horas você trabalhou no mês?: ");
+    scanf("%d", &horasmes);
+    
+    salariobruto = horaaula * horasmes;
+    
+    printf("\nSALÁRIO BRUTO:");
+    printf("\n%s, o seu salário bruto é de R$%.2f", nome, salariobruto);
+    
+    printf("\n\nConfira a tabela de contribuição do INSS 2023:");
+    printf("\n1. Até R$1.302,00 – 7,5%%\n2. De R$1.302,00 até R$2.571,29 – 9%%\n3. De R$2.571,30 até R$3.856,94 – 12%%\n4. De R$3.856,95 até R$7.507,49 – 14%%");
+    
+    printf("\n\nCONDIÇÕES DE SALÁRIO:");
+    if(salariobruto < 1302){
+        printf("\nSeu salário se enquadra na 1ª condição!");
+        descontoinss = salariobruto / 100 * 7.5;
+        salarioliquido = salariobruto - descontoinss;
+        printf("\n\nSALÁRIO LÍQUIDO:");
+        printf("\n%s, o seu salário líquido é de R$%.2f", nome, salarioliquido);
+    }else if(salariobruto < 2571.29){
+        printf("\nSeu salário se enquadra na 2ª condição!");
+        descontoinss = salariobruto / 100 * 9;
+        salarioliquido = salariobruto - descontoinss;
+        printf("\n\nSALÁRIO LÍQUIDO:");
+        printf("\n%s, o seu salário líquido é de R$%.2f", nome, salarioliquido);
+    }else if(salariobruto < 3856.94){
+        printf("\nSeu salário se enquadra na 3ª condição!");
+        descontoinss = salariobruto / 100 * 12;
+        salarioliquido = salariobruto - descontoinss;
+        printf("\n\nSALÁRIO LÍQUIDO:");
+        printf("\n%s, o seu salário líquido é de R$%.2f", nome, salarioliquido);
+    }else{
+        printf("\nSeu salário se enquadra na 4ª condição!");
+        descontoinss = salariobruto / 100 * 14;
+        salarioliquido = salariobruto - descontoinss;
+        printf("\n\nSALÁRIO LÍQUIDO:");
+        printf("\n%s, o seu salário líquido é de R$%.2f", nome, salarioliquido);
+    }
+    
+    return 0;
+}
