@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+    
+int main(){
+    
+    int diastrabalhados;
+    float imposto = 10, gratificacao20 = 20, gratificacao30 = 30, diaria = 50.25;
+    float valorliquido, valorbruto, valordiasT;
+    
+    puts("DIAS TRABALHADOS:");
+    printf("Insira a quantidade de dias trabalhados: ");
+    scanf("%d", &diastrabalhados);
+    
+    valordiasT = (diastrabalhados * diaria);
+    
+    printf("\nCONDIÇÕES DE GRATIFICAÇÃO:");
+    if(diastrabalhados < 10){
+        printf("\nVocê não tem direito à gratificação!");
+        printf("\n\nVALOR LÍQUIDO:");
+        valorliquido = valordiasT - (valordiasT * imposto / 100);
+        printf("\nVocê irá receber %.2f reais", valorliquido);
+    
+        
+    }else if(diastrabalhados < 20){
+        printf("\nVocê tem direito à gratificação de 20%%");
+        printf("\n\nVALOR LÍQUIDO:");
+        valorbruto = valordiasT + (valordiasT * gratificacao20 / 100);
+        valorliquido = valorbruto - (valorbruto * imposto / 100);
+        printf("\nVocê irá receber %.2f reais", valorliquido);
+        
+        
+    }else{
+        printf("\nVocê tem direito à gratificação de 30%%");
+        printf("\n\nVALOR LÍQUIDO:");
+        valorbruto = valordiasT + (valordiasT * gratificacao30 / 100);
+        valorliquido = valorbruto - (valorbruto * imposto / 100);
+        printf("\nVocê irá receber %.2f reais", valorliquido);
+    }
+
+    return 0;
+}
