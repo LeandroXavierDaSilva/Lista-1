@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    int num, mod_num;
+
+    printf("Digite um valor inteiro: ");
+    scanf("%d", &num);
+
+    mod_num = (num >= 0) ? num : -num;
+    
+    printf("\nVALOR ABSOLUTO:");
+    printf("\nO módulo de %d é %d", num, mod_num);
+
+    return 0;
+}
