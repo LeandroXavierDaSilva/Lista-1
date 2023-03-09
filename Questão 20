@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    
+    int num, res_num;
+    
+    printf("Digite um número inteiro: ");
+    scanf("%d", &num);
+    
+    res_num = num & 1;
+    
+    switch(res_num){
+        case 0:
+            printf("%d é um número par", num);
+            break;
+        case 1:
+            printf("%d é um número ímpar", num);
+            break;
+    }
+
+    return 0;
+}
