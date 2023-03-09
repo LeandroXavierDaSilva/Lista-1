@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    
+    printf("Valor de 'A': %d", 'A');
+    printf("\nValor de 'B': %d", 'B');
+    printf("\nValor de 'C': %d", 'C');
+    printf("\nValor de 'a': %d", 'a');
+    printf("\nValor de 'b': %d", 'b');
+    printf("\nValor de 'c': %d", 'c');
+    printf("\nValor de '0': %d", '0');
+    printf("\nValor de '1': %d", '1');
+    printf("\nValor de '2': %d", '2');
+    printf("\nValor de '$': %d", '$');
+    printf("\nValor de '*': %d", '*');
+    printf("\nValor de '+': %d", '+');
+    printf("\nValor de '/': %d", '/');
+    printf("\nValor de ' ' (espaço em branco): %d", ' ');
+
+
+    return 0;
+}
