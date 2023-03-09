@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    
+    int num1, num2, resultado;
+    
+    printf("DIGITE DOIS NÚMEROS INTEIROS!");
+    printf("\nDigite um número inteiro: ");
+    scanf("%d", &num1);
+    
+    printf("Digite outro número inteiro: ");
+    scanf("%d", &num2);
+    
+    resultado = num1 % num2;
+    
+    printf("\nRESULTADO:");
+    printf("\nO %d ", num1);
+    printf(resultado == 0 ? "é múltiplo" : "não é múltiplo");
+    printf(" de %d", num2);
+    
+    return 0;
+}
