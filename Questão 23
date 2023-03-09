@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    
+    int num, digito1, digito2, digito3;
+    
+    printf("Digite um número de 3 dígitos: ");
+    scanf("%d", &num);
+    
+    if(num < 100 || num > 999){
+        printf("Você digitou um número inválido!");
+        return 0;
+    }
+    
+    digito1 = num / 100;
+    digito2 = (num / 10) % 10;
+    digito3 = num % 10;
+
+    printf("O número invertido é: %d%d%d", digito3, digito2, digito1);
+
+    return 0;
+}
