@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(){
+    
+    float x1, x2, y1, y2, distancia;
+    
+    printf ("Insira as coordenadas para x e y do primeiro ponto, respectivamente: ");
+    scanf ("%f %f", &x1, &y1);
+
+    printf ("Insira as coordenadas para x e y do segundo ponto, respectivamente: ");
+    scanf ("%f %f", &x2, &y2);
+    
+    distancia = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+    
+    printf("\nRESULTADO:\n");
+    printf("A distância entre os pontos (%.2f, %.2f) e (%.2f, %.2f) é %.2f", x1, y1, x2, y2, distancia);
+
+  return 0;
+}
