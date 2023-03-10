@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(){
+    
+    int i;
+    float num1, num2, num3;
+    float media_aritmetica, media_geometrica;
+    
+    for(i=0; i<1; i++){
+        printf("Digite o %dº número flutuante: ", i+1);
+        scanf("%f", &num1);
+        
+        printf("Digite o %dº número flutuante: ", i+2);
+        scanf("%f", &num2);
+        
+        printf("Digite o %dº número flutuante: ", i+3);
+        scanf("%f", &num3);
+    }
+
+    media_aritmetica = (num1 + num2 + num3) / 3;
+    media_geometrica = pow(num1 * num2 * num3, 1.0 / 3);
+
+    printf("\nRESULTADO:\n");
+    printf("Média aritmética: %.2f\n", media_aritmetica);
+    printf("Média geométrica: %.2f\n", media_geometrica);
+
+    return 0;
+}
