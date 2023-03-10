@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    
+    int x, n, produto;
+    
+    printf("OBS: O cálculo que vai ser usado é: x * 2^n");
+    
+    printf("\n\nInsira um valor para x: ");
+    scanf("%d", &x);
+    
+    printf("Insira um valor para n: ");
+    scanf("%d", &n);
+    
+    produto = x << n;
+    
+    printf("\nO resultado é %d", produto);
+    return 0;
+}
