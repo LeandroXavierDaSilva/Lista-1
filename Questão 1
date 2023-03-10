@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    
+    int x;
+    
+    x = 7 + 3*6/2-1;
+    printf("1. (x = 7 + 3*6/2-1)\n");
+    printf("\nORDEM DE CÁLCULO:\nPrimeiro multiplicar e dividir (3*6/2 -> 18/2 = 9), depois subtrair -1 do resultado e, por último, somar com +7.");
+    printf("\n\nCÁLCULO:\nx = 7 + 9 - 1");
+    
+    printf("\n\nRESULTADO:\n");
+    printf("O valor de x é %d\n\n", x);
+    
+    printf("---------------------------------------------------------------------------------------------------------------------\n\n");
+    
+    x = 2%2 + 2*2 - 2/2;
+    printf("2. (x = 2%%2 + 2*2 - 2/2)\n");
+    printf("\nORDEM DE CÁLCULO:\nPrimeiro calcular o módulo (2%%2 = 0), somar o resultado com a multiplicação de (2*2 = 4) e, por último, subtrair com a divisão de (2/2 = 1).");
+    printf("\n\nCÁLCULO:\nx = 0 + 4 - 1");
+    
+    printf("\n\nRESULTADO:\n");
+    printf("O valor de x é %d\n\n", x);
+    
+    printf("---------------------------------------------------------------------------------------------------------------------\n\n");
+    
+    x = (3 * 9 * (3 + (9*3/(3))));
+    printf("3. (x = (3 * 9 * (3 + (9*3/(3)))))\n");
+    printf("\nORDEM DE CÁLCULO:\nPrimeiro os parênteses internos (9*3/3 -> 27/3 = 9), depois parênteses externos (3 + resultado da divisão(9) = 12) e, por último, multiplicação.");
+    printf("\n\nCÁLCULO:\nx = (3 * 9 * (3 + 9))");
+    printf("\nx = (3 * 9 * 12)");
+    
+    printf("\n\nRESULTADO:\n");
+    printf("O valor de x é %d", x);
+    
+    return 0;
+}
